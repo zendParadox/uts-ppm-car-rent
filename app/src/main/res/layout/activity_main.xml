@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rental Mobil"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:hint="Nama Penyewa"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAvanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avanza/Xenia/Grandmax" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMinibus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minibus/Elf" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupCars"
+        android:hint="Jumlah Hari"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDays"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
